@@ -1,0 +1,44 @@
+{
+    "social_networks": [
+        {"Name": "Telegram", "icon": "https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white", "link": "https://t.me/Selector0073"},
+        {"Name": "GitHub", "icon": "https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white", "link": "https://github.com/Selector0073"}
+    ],
+    "skills": {
+        "Frontend": [
+            {"Name": "Django", "Link": "https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white"},
+            {"Name": "Astro", "Link": "https://img.shields.io/badge/astro-%232C2052.svg?style=for-the-badge&logo=astro&logoColor=white"},
+            {"Name": "HTML5", "Link": "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"},
+            {"Name": "CSS3", "Link": "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"},
+            {"Name": "Bootstrap", "Link": "https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"}
+        ],
+        "Backend": [
+            {"Name": "DjangoREST", "Link": "https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray"}
+        ],
+        "Programming Languages": [
+            {"Name": "Python", "Link": "https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"},
+            {"Name": "SQL", "Link": "https://img.shields.io/badge/sql-%2307405e.svg?style=for-the-badge&logo=sql&logoColor=white"},
+            {"Name": "JavaScript", "Link": "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"},
+            {"Name": "Typescript", "Link": "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"}
+        ],
+        "Databases": [
+            {"Name": "SQLite", "Link": "https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white"},
+            {"Name": "PostgreSQL", "Link": "https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"}
+        ],
+        "Containers": [
+            {"Name": "Docker", "Link": "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"},
+            {"Name": "DockerCompose", "Link": "https://img.shields.io/badge/docker_compose-%232496ed.svg?style=for-the-badge&logo=docker&logoColor=white"}
+        ],
+        "Game Development": [
+            {"Name": "Godot", "Link": "https://img.shields.io/badge/GODOT-%23FFFFFF.svg?style=for-the-badge&logo=godot-engine"},
+            {"Name": "Blender", "Link": "https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white"}
+        ],
+        "Other": [
+            {"Name": "Git", "Link": "https://img.shields.io/badge/git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white"},
+            {"Name": "Debian", "Link": "https://img.shields.io/badge/debian-%23A81D33.svg?style=for-the-badge&logo=debian&logoColor=white"}
+        ],
+        "Hobbie": [
+            {"Name": "Rust", "Link": "https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white"},
+            {"Name": "Nim", "Link": "https://img.shields.io/badge/nim-%23ffc200.svg?style=for-the-badge&logo=nim&logoColor=golden"}
+        ]
+    }
+}
