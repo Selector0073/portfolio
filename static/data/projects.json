@@ -5,14 +5,16 @@
             "description": "",
             "image": "",
             "redirect": "",
-            "link": ""
+            "link": "",
+            "status": "",
         },
         {
             "title": "Project 2",
             "description": "",
             "image": "",
             "redirect": "",
-            "link": ""
+            "link": "",
+            "status": "",
         }
     ]
 }
