@@ -1,0 +1,30 @@
+@layer vendor, custom;
+
+/* Імпортуємо Bootstrap прямо в шар vendor */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css") layer(vendor);
+
+@layer custom {
+    @font-face {
+        font-family: 'RobotoMono';
+        src: url('./fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    :root {
+        --bs-body-bg: #111111;
+        --bs-body-color: #ffffff;
+        --bs-body-font-family: 'RobotoMono', 'Arial', sans-serif;
+    }
+
+    html, body {
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        font-family: var(--bs-body-font-family);
+        letter-spacing: 0.07em;
+    }
+
+    p {
+        font-size: 24px;
+    }
+}

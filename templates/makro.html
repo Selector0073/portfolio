@@ -1,0 +1,33 @@
+{% macro SkillCard(SkillName) %}
+<style>
+    .box {
+        min-height: 200px;
+        padding: 10px;
+        background-color: #303030;
+        border-radius: 2px;
+    }
+</style>
+
+<div class="box">
+    {{ SkillName }}
+</div>
+{% endmacro %}
+
+
+{% macro ProjectCard(ProjectName, ProjectDescription, ProjectImage, ProjectLink, Project) %}
+<style>
+    .box {
+        min-height: 400px;
+        padding: 10px;
+        background-color: #303030;
+        border-radius: 2px;
+    }
+</style>
+
+<div class="box">
+    {{ ProjectName }}
+    {{ ProjectDescription }}
+    <img src="{{ ProjectImage }}" alt="{{ ProjectName }} image">
+    <a href="{{ ProjectLink }}">Project Link</a>
+</div>
+{% endmacro %}
