@@ -14,7 +14,7 @@
 {% endmacro %}
 
 
-{% macro ProjectCard(ProjectName, ProjectDescription, ProjectImage, ProjectLink, Project) %}
+{% macro ProjectCard(ProjectName, ProjectDescription, ProjectImage, ProjectLink, redirect, status) %}
 <style>
     .box {
         min-height: 400px;
@@ -30,4 +30,6 @@
     <img src="{{ ProjectImage }}" alt="{{ ProjectName }} image">
     <a href="{{ ProjectLink }}">Project Link</a>
 </div>
+    {{ redirect }}
+    {{ status }}
 {% endmacro %}
