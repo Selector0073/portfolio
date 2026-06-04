@@ -2,35 +2,65 @@
     "skills": [
         {
             "category": "Frontend",
-            "items": ["Django", "Astro", "Zola", "HTML5", "CSS3", "Bootstrap", "SASS"]
+            "items": [
+                { "name": "Django", "logo": "icons/Django.svg" },
+                { "name": "Astro", "logo": "icons/Astro.svg" },
+                { "name": "Zola", "logo": "icons/Zola.svg" },
+                { "name": "HTML5", "logo": "icons/Html5.svg" },
+                { "name": "CSS3", "logo": "icons/Css3.svg" },
+                { "name": "Bootstrap", "logo": "icons/Bootstrap.svg" },
+                { "name": "SASS", "logo": "icons/Sass.svg" }
+            ]
         },
         {
             "category": "Backend",
-            "items": ["DjangoREST"]
+            "items": [
+                { "name": "DjangoREST", "logo": "icons/Django.svg" }
+            ]
         },
         {
             "category": "Programming Languages",
-            "items": ["Python", "SQL", "JavaScript", "Typescript"]
+            "items": [
+                { "name": "Python", "logo": "icons/Python.svg" },
+                { "name": "SQL", "logo": "icons/SQL.svg" },
+                { "name": "JavaScript", "logo": "icons/Javascript.svg" },
+                { "name": "TypeScript", "logo": "icons/Typescript.svg" }
+            ]
         },
         {
             "category": "Databases",
-            "items": ["PostgreSQL", "SQLite"]
+            "items": [
+                { "name": "PostgreSQL", "logo": "icons/Postgresql.svg" },
+                { "name": "SQLite", "logo": "icons/Sqlite.svg" }
+            ]
         },
         {
             "category": "Containers",
-            "items": ["Docker", "DockerCompose"]
+            "items": [
+                { "name": "Docker", "logo": "icons/Docker.svg" },
+                { "name": "DockerCompose", "logo": "icons/Docker.svg" }
+            ]
         },
         {
             "category": "Game Development",
-            "items": ["Godot", "Blender"]
+            "items": [
+                { "name": "Godot", "logo": "icons/Godot.svg" },
+                { "name": "Blender", "logo": "icons/Blender.svg" }
+            ]
         },
         {
             "category": "Other",
-            "items": ["Git", "Debian"]
+            "items": [
+                { "name": "Git", "logo": "icons/Git.svg" },
+                { "name": "Linux", "logo": "icons/Linux.svg" }
+            ]
         },
         {
             "category": "Hobbie",
-            "items": ["Rust", "Nim"]
+            "items": [
+                { "name": "Rust", "logo": "icons/Rust.svg" },
+                { "name": "Nim", "logo": "icons/Nim.svg" }
+            ]
         }
     ]
 }
