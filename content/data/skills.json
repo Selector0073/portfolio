@@ -1,0 +1,36 @@
+{
+    "skills": [
+        {
+            "category": "Frontend",
+            "items": ["Django", "Astro", "Zola", "HTML5", "CSS3", "Bootstrap", "SASS"]
+        },
+        {
+            "category": "Backend",
+            "items": ["DjangoREST"]
+        },
+        {
+            "category": "Programming Languages",
+            "items": ["Python", "SQL", "JavaScript", "Typescript"]
+        },
+        {
+            "category": "Databases",
+            "items": ["PostgreSQL", "SQLite"]
+        },
+        {
+            "category": "Containers",
+            "items": ["Docker", "DockerCompose"]
+        },
+        {
+            "category": "Game Development",
+            "items": ["Godot", "Blender"]
+        },
+        {
+            "category": "Other",
+            "items": ["Git", "Debian"]
+        },
+        {
+            "category": "Hobbie",
+            "items": ["Rust", "Nim"]
+        }
+    ]
+}
