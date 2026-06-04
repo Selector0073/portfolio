@@ -2,15 +2,17 @@
     "projects": [
         {
             "title": "Library API",
-            "description": "",
+            "short-description": "",
+            "full-description": "",
             "image": "",
             "redirect": "",
             "link": "",
             "status": ""
         },
         {
-            "title": "Project 2",
-            "description": "",
+            "title": "LazyReq",
+            "short-description": "",
+            "full-description": "",
             "image": "",
             "redirect": "",
             "link": "",
