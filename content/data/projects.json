@@ -2,12 +2,25 @@
     "projects": [
         {
             "title": "Library API",
-            "short-description": "",
+            "short-description": "API",
             "full-description": "",
-            "image": "",
+            "image-preview": "",
+            "image-first": "",
+            "image-second": "",
             "redirect": "",
-            "link": "",
-            "status": ""
+            "link": "https://github.com/Selector0073/librarysite",
+            "status": "Finished",
+            "type": "commercial",
+            "tools": [
+                { "name": "PostgreSQL" },
+                { "name": "MailHog" },
+                { "name": "Docker" },
+                { "name": "DockerCompose" },
+                {
+                    "name": "Python", 
+                    "values": ["Django", "DjangoREST", "SimpleJwt", "BeautifulSoup4", "mimesis", "requests", "dotenv"] 
+                }
+            ]
         },
         {
             "title": "LazyReq",
