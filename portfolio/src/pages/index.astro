@@ -52,7 +52,7 @@ import dataSocialNetworks from '../data/social-networks.json';
         <div class="card-body">
           <h5 class="card-title">{project.Title}</h5>
           <p class="card-text">{project.ShortDescription}</p>
-          <a href={`/project?id=${project.ID}`} class="btn btn-primary">View more</a>
+          <a href={`/project/${project.ID}`} class="btn btn-primary">View more</a>
         </div>
       </div>
     ))}
