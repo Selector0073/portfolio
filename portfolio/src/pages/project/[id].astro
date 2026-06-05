@@ -1,0 +1,38 @@
+---
+import Layout from '../../layout/layout.astro';
+
+import projectsData from '../../data/projects.json';
+
+export async function getStaticPaths() {
+  // Звертаємося безпосередньо до масиву через `projectsData.projects`
+  return projectsData.projects.map((project) => {
+    return {
+      // Використовуємо project.ID (великі літери, як у вашому JSON)
+      params: { id: project.ID.toString() }, 
+      props: { project },
+    };
+  });
+}
+
+const { project } = Astro.props;
+---
+
+<Layout>
+  <body>
+    <h1>{project.Title}</h1>
+    <p><strong>Тип:</strong> {project.Type} ({project.Status})</p>
+    <p>{project.FullDescription}</p>
+    
+    <h3>Інструменти:</h3>
+    <ul>
+      {project.Tools.map((tool) => (
+        <li>
+          <strong>{tool.name}</strong>
+          {tool.values && ` — ${tool.values.join(', ')}`}
+        </li>
+      ))}
+    </ul>
+
+    {project.Link && <a href={project.Link} target="_blank">GitHub Репозиторій</a>}
+  </body>
+</Layout>
