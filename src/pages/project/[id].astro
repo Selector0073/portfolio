@@ -27,7 +27,7 @@ const { project } = Astro.props;
 
             {project.Images.map((image: string, index: number) => (
                 <div class={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                    <img src={`../${image}`} class="carousel-img" alt="Project screenshot" />
+                    <img src={`${image}`} class="carousel-img" alt="Project screenshot" />
                 </div>
             ))}
 
