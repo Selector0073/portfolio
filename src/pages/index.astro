@@ -1,6 +1,6 @@
 ---
 import Layout from '../layout/layout.astro';
-// Імпорт даних замість load_data
+import '../styles/skills.scss';
 import dataSkills from '../data/skills.json';
 import dataProjects from '../data/projects.json';
 import dataSocialNetworks from '../data/social-networks.json';
@@ -48,11 +48,15 @@ import dataSocialNetworks from '../data/social-networks.json';
         class="card flex-shrink-0 me-3" 
         style="width: 18rem; scroll-snap-align: start;"
       >
-        <img src={project.ImagePreview} class="card-img-top" alt={project.Title} />
+        <img 
+          src={project.Images?.[0] || '/path/to/default-placeholder.png'} 
+          class="card-img-top" 
+          alt={project.Title} 
+        />
         <div class="card-body">
           <h5 class="card-title">{project.Title}</h5>
           <p class="card-text">{project.ShortDescription}</p>
-          <a href={`/project?id=${project.ID}`} class="btn btn-primary">View more</a>
+          <a href={`/project/${project.ID}`} class="btn btn-primary">View more</a>
         </div>
       </div>
     ))}

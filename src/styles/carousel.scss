@@ -1,0 +1,38 @@
+// Визначення константи для висоти каруселі (налаштуйте під ваш дизайн)
+$carousel-height: 500px;
+$carousel-mobile-height: 300px;
+
+.custom-carousel {
+    width: 100%;
+    background-color: #1a1a1a; // Темний фон для заповнення порожнеч, якщо фото пропорційно вужче
+
+    .carousel-inner {
+        height: $carousel-height;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            height: $carousel-mobile-height;
+        }
+    }
+
+    .carousel-item {
+        height: 100%;
+        width: 100%;
+        
+        // Переконаємось, що анімація переходу працює коректно при flex-вирівнюванні
+        &.active,
+        &-next,
+        &-prev {
+            display: block;
+        }
+    }
+
+    .carousel-img {
+        width: 100%;
+        height: 100%;
+        // Головний аспект: стискає зображення пропорційно, щоб воно повністю помістилося в екран
+        object-fit: contain; 
+        object-position: center;
+    }
+}
