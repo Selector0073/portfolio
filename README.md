@@ -1,7 +1,10 @@
-Path to default place holder in projects
+web site generator
+
+
 
 semantic
 
+конкурси
 
 # Astro Starter Kit: Minimal
 

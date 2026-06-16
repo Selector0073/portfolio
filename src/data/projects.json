@@ -5,7 +5,7 @@
             "Title": "Library API",
             "ShortDescription": "API using DjangoREST for maintaining the library website",
             "FullDescription": "Development of the architecture and server-side components of a commercial web application using the Django REST Framework as part of an internship at \"SP Lutsk\".",
-            "Images": ["", "", ""],
+            "Images": ["LibrarySite1.webp", "LibrarySite2.webp", "LibrarySite3.webp"],
             "Link": "https://github.com/Selector0073/librarysite",
             "Status": "Finished",
             "Type": "Commercial",
@@ -16,7 +16,7 @@
                 { "name": "DockerCompose" },
                 {
                     "name": "Python", 
-                    "values": ["Django", "DjangoREST", "SimpleJwt", "BeautifulSoup4", "mimesis", "requests", "dotenv"] 
+                    "values": ["Django", "DjangoREST", "SimpleJwt", "BeautifulSoup4", "mimesis", "requests", "dotenv", "pipenv"] 
                 }
             ]
         },
@@ -25,14 +25,14 @@
             "Title": "LazyReq",
             "ShortDescription": "A lightweight program for sending HTTP requests",
             "FullDescription": "A lightweight Python program for sending HTTP requests and viewing responses",
-            "Images": ["images/LazyReq1.webp", "images/LazyReq2.webp", "images/LazyReq3.webp"],
+            "Images": ["LazyReq1.webp", "LazyReq2.webp", "LazyReq3.webp"],
             "Link": "https://github.com/Selector0073/lazyreq",
             "Status": "Finished",
             "Type": "Pet-project",
             "Tools": [
                 {
                     "name": "Python", 
-                    "values": ["DearPyGui", "URLlib3"]
+                    "values": ["DearPyGui", "URLlib3", "pipenv"]
                 }
             ]
         }
