@@ -7,61 +7,61 @@ import dataSocialNetworks from '../data/social-networks.json';
 ---
 
 <Layout>
-  <div class="d-flex align-items-center logo-header-container">
-    <div class="p-0 m-0 logo-wrapper">
-      <img src="/favicon.svg" class="mb-3 responsive-logo" alt="Favicon" />
-    </div>
-    <div class="p-0 m-0 ms-3 text-wrapper">
-      <h1><span>Selector</span> <span>0073</span></h1>
-      <h2>Fullstack web developer</h2>
-    </div>
-  </div>
-
-  <h2 class="tab" id="SkillsScroll">Skills</h2>
-
-  <div class="skills-wrapper">
-    {dataSkills.skills.map((group) => (
-      <div class="skill-box">
-        <h3>{group.category}</h3>
-        <div class="container-fluid text-start">
-          <div class="d-flex flex-wrap gap-3">
-            {group.items.map((skill) => (
-              <div class="skill-capsule">
-                <img src={skill.logo} class="skill-logo" alt={skill.name} />
-                <span class="skill-name">{skill.name}</span>
-              </div>
-            ))}
-          </div>
+    <div class="d-flex align-items-center logo-header-container">
+        <div class="p-0 m-0 logo-wrapper">
+            <img src="/favicon.svg" class="mb-3 responsive-logo" alt="Favicon" />
         </div>
-      </div>
-    ))}
-  </div>
-
-  <h2 class="tab" id="ProjectsScroll">Projects</h2>
-
-  <div 
-    class="d-flex flex-nowrap overflow-auto pb-3" 
-    style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;"
-  >
-    {dataProjects.projects.map((project) => (
-      <div 
-        class="card flex-shrink-0 me-3" 
-        style="width: 18rem; scroll-snap-align: start;"
-      >
-        <img 
-          src={project.Images?.[0] || '/path/to/default-placeholder.png'} 
-          class="card-img-top" 
-          alt={project.Title} 
-        />
-        <div class="card-body">
-          <h5 class="card-title">{project.Title}</h5>
-          <p class="card-text">{project.ShortDescription}</p>
-          <a href={`/project/${project.ID}`} class="btn btn-primary">View more</a>
+        <div class="p-0 m-0 ms-3 text-wrapper">
+            <h1><span>Selector</span> <span>0073</span></h1>
+            <h2>Fullstack web developer</h2>
         </div>
-      </div>
-    ))}
-  </div>
+    </div>
 
-  <h2 class="tab" id="QaAScroll">Q&A</h2>
-  <h2 class="tab" id="ContactScroll">Contact</h2>
+    <h2 class="tab" id="SkillsScroll">Skills</h2>
+
+    <div class="skills-wrapper">
+        {dataSkills.skills.map((group) => (
+            <div class="skill-box">
+                <h3>{group.category}</h3>
+                <div class="container-fluid text-start">
+                    <div class="d-flex flex-wrap gap-3">
+                        {group.items.map((skill) => (
+                            <div class="skill-capsule">
+                                <img src={skill.logo} class="skill-logo" alt={skill.name} />
+                                <span class="skill-name">{skill.name}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        ))}
+    </div>
+
+    <h2 class="tab" id="ProjectsScroll">Projects</h2>
+
+    <div 
+        class="d-flex flex-nowrap overflow-auto pb-3" 
+        style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;"
+    >
+        {dataProjects.projects.map((project) => (
+            <div 
+                class="card flex-shrink-0 me-3" 
+                style="width: 18rem; scroll-snap-align: start;"
+            >
+                <img 
+                    src={`/images/${project.Images[0]}`} 
+                    class="card-img-top" 
+                    alt={project.Title} 
+                />
+                <div class="card-body">
+                    <h5 class="card-title">{project.Title}</h5>
+                    <p class="card-text">{project.ShortDescription}</p>
+                    <a href={`/project/${project.ID}`} class="btn btn-primary">View more</a>
+                </div>
+            </div>
+        ))}
+    </div>
+
+    <h2 class="tab" id="AboutScroll">About</h2>
+    <h2 class="tab" id="ContactScroll">Contact</h2>
 </Layout>

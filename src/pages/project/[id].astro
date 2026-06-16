@@ -16,40 +16,62 @@ export async function getStaticPaths() {
 const { project } = Astro.props;
 ---
 
-<Layout>
-    <h1>{project.Title}</h1>
-    <p><strong>Тип:</strong> {project.Type} ({project.Status})</p>
-    <p>{project.FullDescription}</p>
-        
+<Layout title={`${project.Title} — Selector0073`}>
+    <article class="project-page">
+        <header class="project-hero">
+            <div class="hero-content">
+                <div class="badge">{project.Type} • {project.Status}</div>
+                <h1>{project.Title}</h1>
+                <p class="lead">{project.FullDescription}</p>
+                {project.Link && (
+                    <a href={project.Link} target="_blank" class="btn-github" rel="noopener noreferrer">
+                        <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" height="50vh" alt="GitHub repo" />
+                    </a>
+                )}
+            </div>
 
-    <div id="carouselExample" class="carousel slide custom-carousel">
-        <div class="carousel-inner">
+            <div class="hero-image">
+                <img 
+                    src={`/images/${project.Images[0]}`} 
+                    alt={`Main image: ${project.Title}`}
+                    loading="eager"
+                />
+            </div>
+        </header>
 
-            {project.Images.map((image: string, index: number) => (
-                <div class={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                    <img src={`../${image}`} class="carousel-img" alt="Project screenshot" />
-                </div>
-            ))}
+        {project.Images.length > 1 && (
+            <section class="screenshots">
+                <h2>Screenshots</h2>
+                <div id="carouselExample" class="carousel slide custom-carousel">
+                    <div class="carousel-inner">
+                        {project.Images.map((image: string, index: number) => (
+                            <div class={`carousel-item ${index === 0 ? 'active' : ''}`}>
+                                <img src={`/images/${image}`} class="carousel-img" alt={`Скріншот ${index + 1}`} />
+                            </div>
+                        ))}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div> 
+            </section>
+        )}
 
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div> 
-
-    <h3>Інструменти:</h3>
-    <ul>
-        {project.Tools.map((tool) => (
-            <li>
-                <strong>{tool.name}</strong>
-                {tool.values && ` — ${tool.values.join(', ')}`}
-            </li>
-        ))}
-    </ul>
-    <p>Проект можна переглянути у {project.Link && <a href={project.Link} target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github link"></a>}. </p>
+        <section class="tools">
+            <h2>Tools</h2>
+            <div class="tools-grid">
+                {project.Tools.map((tool) => (
+                    <div class="tool-card">
+                        <strong>{tool.name}</strong>
+                        {tool.values && <span> — {tool.values.join(', ')}</span>}
+                    </div>
+                ))}
+            </div>
+        </section>
+    </article>
 </Layout>
