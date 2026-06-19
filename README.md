@@ -1,10 +1,7 @@
-web site generator
+Background
 
 
 
-semantic
-
-конкурси
 
 # Astro Starter Kit: Minimal
 

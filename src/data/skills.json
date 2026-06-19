@@ -3,7 +3,6 @@
         {
             "category": "Frontend",
             "items": [
-                { "name": "Django", "logo": "icons/Django.svg" },
                 { "name": "Astro", "logo": "icons/Astro.svg" },
                 { "name": "Zola", "logo": "icons/Zola.svg" },
                 { "name": "HTML5", "logo": "icons/Html5.svg" },
@@ -15,6 +14,7 @@
         {
             "category": "Backend",
             "items": [
+                { "name": "Django", "logo": "icons/Django.svg" },
                 { "name": "DjangoREST", "logo": "icons/Django.svg" }
             ]
         },
@@ -52,7 +52,8 @@
             "category": "Other",
             "items": [
                 { "name": "Git", "logo": "icons/Git.svg" },
-                { "name": "Linux", "logo": "icons/Linux.svg" }
+                { "name": "Linux", "logo": "icons/Linux.svg" },
+                { "name": "Netlify", "logo": "icons/Netlify.svg"}
             ]
         },
         {

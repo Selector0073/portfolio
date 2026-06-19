@@ -1,5 +1,9 @@
+@use "sass:color";
+
 .skill-capsule {
-    background-color: #161616;
+    background: rgba(22, 22, 22, 0.01);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
     border: 2px solid #2C2C2C;
     border-radius: 50px;
 
@@ -40,7 +44,9 @@
 }
 
 .skill-box {
-    background-color: #161616;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
     border: 2px solid #2C2C2C;
     border-radius: 8px;
     padding: 20px 20px;

@@ -19,7 +19,7 @@ const { project } = Astro.props;
 <Layout title={`${project.Title} — Selector0073`}>
     <article class="project-page">
         <header class="project-hero">
-            <div class="hero-content">
+            <div class="hero-content text-container mt-4 d-inline-block">
                 <div class="badge">{project.Type} • {project.Status}</div>
                 <h1>{project.Title}</h1>
                 <p class="lead">{project.FullDescription}</p>
@@ -41,7 +41,7 @@ const { project } = Astro.props;
 
         {project.Images.length > 1 && (
             <section class="screenshots">
-                <h2>Screenshots</h2>
+                <h2 class="text-container mt-4 d-inline-block">Screenshots</h2>
                 <div id="carouselExample" class="carousel slide custom-carousel">
                     <div class="carousel-inner">
                         {project.Images.map((image: string, index: number) => (
@@ -63,12 +63,12 @@ const { project } = Astro.props;
         )}
 
         <section class="tools">
-            <h2>Tools</h2>
+            <h2 class="text-container mt-4 d-inline-block">Tools</h2>
             <div class="tools-grid">
                 {project.Tools.map((tool) => (
                     <div class="tool-card">
                         <strong>{tool.name}</strong>
-                        {tool.values && <span> — {tool.values.join(', ')}</span>}
+                        {tool.values && <span> - {tool.values.join(', ')}</span>}
                     </div>
                 ))}
             </div>

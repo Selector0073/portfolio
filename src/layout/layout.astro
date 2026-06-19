@@ -1,16 +1,62 @@
 ---
+const title = "Selector0073 Portfolio";
+const description = "Portfolio of Selector0073 fullstack web developer.";
+const siteUrl = "https://selector0073-portfolio.netlify.app";
+const ogImageUrl = `${siteUrl}/favicon.svg`;
+const year = new Date().getFullYear();
+
 import '../styles/main.scss';
+import '../styles/footer.scss';
+import '../styles/social-networks.scss';
 ---
 
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
-        <title>Selector0073</title>
+        <title>Selector0073 portfolio</title>
+
+        <link rel="canonical" href={siteUrl} />
+        <meta name="title" content={title} />
+        <meta name="description" content={description} />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#111111" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={ogImageUrl} />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={siteUrl} />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+        <meta property="twitter:image" content={ogImageUrl} />
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
+
+        <script type="application/ld+json" is:inline set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Selector0073",
+            "url": siteUrl,
+            "jobTitle": "Fullstack web developer",
+            "sameAs": [
+            "https://github.com/Selector0073", "https://gitlab/Selector0073"
+            ]
+        },
+        "heading": title,
+        "description": description
+        })} />
+
         <script defer src="https://cloud.umami.is/script.js" data-website-id="0a405718-64ed-4caa-8a3a-a11c3593ec8e"></script>
     </head>
-    <body>
+    <body class="d-flex flex-column">
+        <canvas id="bg-canvas"></canvas>
         <header>
             <nav class="navbar fixed-top navbar-expand-lg">
                 <div class="container-fluid">
@@ -28,10 +74,9 @@ import '../styles/main.scss';
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
+                            <a class="nav-link" href="/#AboutScroll">About</a>
                             <a class="nav-link" href="/#SkillsScroll">Skills</a>
                             <a class="nav-link" href="/#ProjectsScroll">Projects</a>
-                            <a class="nav-link" href="/#AboutScroll">About</a>
-                            <a class="nav-link" href="/#ContactScroll">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -40,10 +85,47 @@ import '../styles/main.scss';
 
         <main>
             <slot />
+            <div class="social-panel">
+                <div class="socialCard">
+                    <a href="https://github.com/Selector0073" class="socialContainer containerOne">
+                        <img src="/icons/Github.svg" class="socialSvg">
+                    </a>
+                
+                    <a href="mailto:selector0073@proton.me" class="socialContainer containerTwo">
+                        <img src="/icons/Mail.svg" class="socialSvg">
+                    </a>
+                
+                    <!--
+                    <a href="#" class="socialContainer containerThree">
+                        
+                    </a>
+                
+                    <a href="#" class="socialContainer containerFour">
+                        
+                    </a>
+                    -->
+                </div>
+            </div>
         </main>
-
-        <footer></footer>
+        <br>
+        <footer class="site-footer">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+                <p class="mb-0">&copy; {year} Stanislav Dukhnevych</p>
+                <nav class="footer-nav d-flex gap-3">
+                    <a href="/">Home</a>
+                    <a href="/privacy">Privacy Policy</a>
+                </nav>
+            </div>
+        </div>
+        </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            import '../scripts/background.js';
+        </script>
     </body>
 </html>
+
+
+

@@ -3,7 +3,6 @@ import Layout from '../layout/layout.astro';
 import '../styles/skills.scss';
 import dataSkills from '../data/skills.json';
 import dataProjects from '../data/projects.json';
-import dataSocialNetworks from '../data/social-networks.json';
 ---
 
 <Layout>
@@ -17,8 +16,14 @@ import dataSocialNetworks from '../data/social-networks.json';
         </div>
     </div>
 
-    <h2 class="tab" id="SkillsScroll">Skills</h2>
 
+    <div class="text-container mt-4">
+        <h2 class="tab" id="AboutScroll">About</h2>
+        <p>Full-Stack developer focused on building stable, scalable web applications. I use AI as a tool to boost my productivity, not as a replacement. I understand, type, and test every line of code. My work features clean logic and controlled complexity, with no vibe-coding.</p>
+    </div>
+
+
+    <h2 class="tab text-container mt-4 d-inline-block" id="SkillsScroll">Skills</h2>
     <div class="skills-wrapper">
         {dataSkills.skills.map((group) => (
             <div class="skill-box">
@@ -37,31 +42,30 @@ import dataSocialNetworks from '../data/social-networks.json';
         ))}
     </div>
 
-    <h2 class="tab" id="ProjectsScroll">Projects</h2>
 
+
+    <h2 class="tab text-container mt-4 d-inline-block" id="ProjectsScroll">Projects</h2>
     <div 
         class="d-flex flex-nowrap overflow-auto pb-3" 
         style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;"
     >
         {dataProjects.projects.map((project) => (
             <div 
-                class="card flex-shrink-0 me-3" 
+                class="card card-glass flex-shrink-0 me-3" 
                 style="width: 18rem; scroll-snap-align: start;"
             >
                 <img 
                     src={`/images/${project.Images[0]}`} 
                     class="card-img-top" 
                     alt={project.Title} 
+                    style="height: 200px; object-fit: cover; object-position: center;"
                 />
                 <div class="card-body">
                     <h5 class="card-title">{project.Title}</h5>
                     <p class="card-text">{project.ShortDescription}</p>
-                    <a href={`/project/${project.ID}`} class="btn btn-primary">View more</a>
+                    <a href={`/project/${project.ID}`} class="btn btn-secondary">View more</a>
                 </div>
             </div>
         ))}
     </div>
-
-    <h2 class="tab" id="AboutScroll">About</h2>
-    <h2 class="tab" id="ContactScroll">Contact</h2>
 </Layout>
