@@ -63,7 +63,14 @@ import dataProjects from '../data/projects.json';
                 <div class="card-body">
                     <h3 class="card-title h5">{project.Title}</h3>
                     <p class="card-text">{project.ShortDescription}</p>
-                    <a href={`/project/${project.ID}`} class="btn btn-secondary">View more</a>
+                    <a 
+                        href={`/project/${project.ID}`} 
+                        class="btn btn-secondary"
+                        style="transform: translateZ(0); will-change: transform;"
+                    >
+                        View more
+                    </a>
+
                 </div>
             </div>
         ))}
