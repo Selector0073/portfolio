@@ -35,6 +35,22 @@
                     "values": ["DearPyGui", "URLlib3", "pipenv"]
                 }
             ]
+        },
+        {
+            "ID": 3,
+            "Title": "Dating bot",
+            "ShortDescription": "Bot for dating with AI.",
+            "FullDescription": "AI bot for dating created during participation in JavaRush marathon.",
+            "Images": ["DatingBot1.webp", "DatingBot2.webp", "DatingBot3.webp"],
+            "Link": "https://github.com/Selector0073/javarush-marathon",
+            "Status": "Finished",
+            "Type": "Pet-project",
+            "Tools": [
+                {
+                    "name": "Python", 
+                    "values": ["dotenv", "openai", "python-telegram-bot", "httpx"]
+                }
+            ]
         }
     ]
 }
