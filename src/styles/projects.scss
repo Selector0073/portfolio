@@ -1,0 +1,62 @@
+@use "sass:color";
+
+.projects-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 20px;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #2C2C2C;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: #3d3d3d;
+        }
+    }
+
+    // Firefox
+    scrollbar-width: thin;
+    scrollbar-color: #2C2C2C transparent;
+}
+
+.project-card {
+    flex-shrink: 0;
+    width: 18rem;
+    scroll-snap-align: start;
+    margin-right: 1rem;
+
+    transition: transform 0.25s ease, border-color 0.25s ease;
+    transform: translateZ(0);
+    will-change: transform;
+
+    &:hover {
+        transform: translateY(-6px) translateZ(0);
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.project-card-img {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.project-card-btn {
+    transform: translateZ(0);
+    will-change: transform;
+}

@@ -1,6 +1,7 @@
 ---
 import Layout from '../layout/layout.astro';
 import '../styles/skills.scss';
+import '../styles/projects.scss';
 import dataSkills from '../data/skills.json';
 import dataProjects from '../data/projects.json';
 ---
@@ -45,34 +46,26 @@ import dataProjects from '../data/projects.json';
 
 
     <h2 class="tab text-container mt-4 d-inline-block" id="ProjectsScroll">Projects</h2>
-    <div 
-        class="d-flex flex-nowrap overflow-auto pb-3" 
-        style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;"
-    >
-        {dataProjects.projects.map((project) => (
-            <div 
-                class="card card-glass flex-shrink-0 me-3" 
-                style="width: 18rem; scroll-snap-align: start;"
-            >
-                <img 
-                    src={`/images/${project.Images[0]}`} 
-                    class="card-img-top" 
-                    alt={project.Title} 
-                    style="height: 200px; object-fit: cover; object-position: center;"
-                />
-                <div class="card-body">
-                    <h3 class="card-title h5">{project.Title}</h3>
-                    <p class="card-text">{project.ShortDescription}</p>
-                    <a 
-                        href={`/project/${project.ID}`} 
-                        class="btn btn-secondary"
-                        style="transform: translateZ(0); will-change: transform;"
-                    >
-                        View more
-                    </a>
-
-                </div>
+    <div class="projects-slider">
+    {dataProjects.projects.map((project) => (
+        <div class="card card-glass project-card">
+            <img 
+                src={`/images/${project.Images[0]}`} 
+                class="card-img-top project-card-img" 
+                alt={project.Title} 
+            />
+            <div class="card-body">
+                <h3 class="card-title h5">{project.Title}</h3>
+                <p class="card-text">{project.ShortDescription}</p>
+                <a 
+                    href={`/project/${project.ID}`} 
+                    class="btn btn-secondary project-card-btn"
+                >
+                    View more
+                </a>
             </div>
-        ))}
-    </div>
+        </div>
+    ))}
+</div>
+    
 </Layout>
