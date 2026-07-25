@@ -39,7 +39,7 @@
         {
             "ID": 3,
             "Title": "Dating bot",
-            "ShortDescription": "Bot for dating with AI.",
+            "ShortDescription": "Bot with AI for dating.",
             "FullDescription": "AI bot for dating created during participation in JavaRush marathon.",
             "Images": ["DatingBot1.webp", "DatingBot2.webp", "DatingBot3.webp"],
             "Link": "https://github.com/Selector0073/javarush-marathon",
