@@ -51,6 +51,22 @@
                     "values": ["dotenv", "openai", "python-telegram-bot", "httpx"]
                 }
             ]
+        },
+        {
+            "ID": 4,
+            "Title": "Codewars pretty stats",
+            "ShortDescription": "An API for retrieving useful statistics from CodeWars",
+            "FullDescription": "A free API for retrieving great stats from your CodeWars account to spruce up your GitHub account, website, or anything else.",
+            "Images": ["development.webp", "development.webp", "development.webp"],
+            "Link": "https://github.com/Selector0073/codewars-pretty-stats",
+            "Status": "Under development",
+            "Type": "Pet-project",
+            "Tools": [
+                {
+                    "name": "Rust", 
+                    "values": ["axum", "hyper", "minreq", "serde/serde_json", "tokio"]
+                }
+            ]
         }
     ]
 }
