@@ -39,14 +39,9 @@
     scroll-snap-align: start;
     margin-right: 1rem;
 
-    transition: transform 0.25s ease, border-color 0.25s ease;
     transform: translateZ(0);
     will-change: transform;
 
-    &:hover {
-        transform: translateY(-6px) translateZ(0);
-        border-color: rgba(255, 255, 255, 0.3);
-    }
 }
 
 .project-card-img {
