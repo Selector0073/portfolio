@@ -44,7 +44,7 @@
             "Images": ["DatingBot1.webp", "DatingBot2.webp", "DatingBot3.webp"],
             "Link": "https://github.com/Selector0073/javarush-marathon",
             "Status": "Finished",
-            "Type": "Pet-project",
+            "Type": "Course",
             "Tools": [
                 {
                     "name": "Python", 
