@@ -24,7 +24,8 @@
                 { "name": "Python", "logo": "icons/Python.svg" },
                 { "name": "SQL", "logo": "icons/SQL.svg" },
                 { "name": "JavaScript", "logo": "icons/Javascript.svg" },
-                { "name": "TypeScript", "logo": "icons/Typescript.svg" }
+                { "name": "TypeScript", "logo": "icons/Typescript.svg" },
+                { "name": "Go", "logo": "icons/Go.svg"}
             ]
         },
         {
