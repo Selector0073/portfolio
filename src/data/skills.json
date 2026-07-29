@@ -54,7 +54,8 @@
             "items": [
                 { "name": "Git", "logo": "icons/Git.svg" },
                 { "name": "Linux", "logo": "icons/Linux.svg" },
-                { "name": "Netlify", "logo": "icons/Netlify.svg"}
+                { "name": "Netlify", "logo": "icons/Netlify.svg"},
+                { "name": "GitHub Actions", "logo": "icons/GitHub.svg"}
             ]
         },
         {
