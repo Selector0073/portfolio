@@ -6,7 +6,7 @@
             "ShortDescription": "API using DjangoREST for maintaining the library website",
             "FullDescription": "Development of the architecture and server-side components of a commercial web application using the Django REST Framework as part of an internship at \"SP Lutsk\".",
             "Images": ["LibrarySite1.webp", "LibrarySite2.webp", "LibrarySite3.webp"],
-            "Link": "https://github.com/Selector0073/librarysite",
+            "GitHubLink": "https://github.com/Selector0073/librarysite",
             "Status": "Finished",
             "Type": "Commercial",
             "Tools": [
@@ -26,7 +26,7 @@
             "ShortDescription": "A lightweight program for sending HTTP requests",
             "FullDescription": "A lightweight Python program for sending HTTP requests and viewing responses",
             "Images": ["LazyReq1.webp", "LazyReq2.webp", "LazyReq3.webp"],
-            "Link": "https://github.com/Selector0073/lazyreq",
+            "GitHubLink": "https://github.com/Selector0073/lazyreq",
             "Status": "Finished",
             "Type": "Pet-project",
             "Tools": [
@@ -42,7 +42,7 @@
             "ShortDescription": "Bot with AI for dating.",
             "FullDescription": "AI bot for dating created during participation in JavaRush marathon.",
             "Images": ["DatingBot1.webp", "DatingBot2.webp", "DatingBot3.webp"],
-            "Link": "https://github.com/Selector0073/javarush-marathon",
+            "GitHubLink": "https://github.com/Selector0073/javarush-marathon",
             "Status": "Finished",
             "Type": "Course",
             "Tools": [
@@ -55,16 +55,45 @@
         {
             "ID": 4,
             "Title": "Codewars pretty stats",
-            "ShortDescription": "An API for retrieving useful statistics from CodeWars",
+            "ShortDescription": "An API for retrieving statistics from CodeWars",
             "FullDescription": "A free API for retrieving great stats from your CodeWars account to spruce up your GitHub account, website, or anything else.",
             "Images": ["development.webp", "codewars-pretty-stats2.webp", "development.webp"],
-            "Link": "https://github.com/Selector0073/codewars-pretty-stats",
+            "GitHubLink": "https://github.com/Selector0073/codewars-pretty-stats",
+            "SiteLink": "https://codewars-api.selector0073.com",
             "Status": "Under development",
             "Type": "Pet-project",
             "Tools": [
                 {
                     "name": "Rust", 
                     "values": ["axum", "hyper", "minreq", "serde/serde_json", "tokio"]
+                }
+            ]
+        },
+        {
+            "ID": 5,
+            "Title": "Go full-stack site",
+            "ShortDescription": "Full-stack web-site on pure Go",
+            "FullDescription": "A full-stack website written entirely in Go. With admin panel, registration system, SMTP service and many other features..",
+            "Images": ["GoSite1.webp", "GoSite2.webp", "GoSite3.webp"],
+            "SiteLink": "https://olhadukhnevych.selector0073.com",
+            "Status": "Finished",
+            "Type": "Commercial",
+            "Tools": [
+                {
+                    "name": "Go", 
+                    "values": ["templ", "scs", "godotenv", "sqlite"]
+                },
+                {
+                    "name": "SQLite"
+                },
+                {
+                    "name": "SQL"
+                },
+                {
+                    "name": "HTMX"
+                },
+                {
+                    "name": "CSS"
                 }
             ]
         }

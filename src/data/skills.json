@@ -1,14 +1,26 @@
 {
     "skills": [
         {
+            "category": "Programming Languages",
+            "items": [
+                { "name": "Python", "logo": "icons/Python.svg" },
+                { "name": "Go", "logo": "icons/Go.svg"},
+                { "name": "Rust", "logo": "icons/Rust.svg" },
+                { "name": "JavaScript", "logo": "icons/Javascript.svg" },
+                { "name": "TypeScript", "logo": "icons/Typescript.svg" },
+                { "name": "SQL", "logo": "icons/SQL.svg" },
+                { "name": "Nim", "logo": "icons/Nim.svg" }
+            ]
+        },
+        {
             "category": "Frontend",
             "items": [
                 { "name": "Astro", "logo": "icons/Astro.svg" },
                 { "name": "Zola", "logo": "icons/Zola.svg" },
                 { "name": "HTML5", "logo": "icons/Html5.svg" },
                 { "name": "CSS3", "logo": "icons/Css3.svg" },
-                { "name": "Bootstrap", "logo": "icons/Bootstrap.svg" },
-                { "name": "SСSS", "logo": "icons/Sass.svg" }
+                { "name": "SCSS", "logo": "icons/Sass.svg" },
+                { "name": "Bootstrap", "logo": "icons/Bootstrap.svg" }
             ]
         },
         {
@@ -19,16 +31,6 @@
             ]
         },
         {
-            "category": "Programming Languages",
-            "items": [
-                { "name": "Python", "logo": "icons/Python.svg" },
-                { "name": "SQL", "logo": "icons/SQL.svg" },
-                { "name": "JavaScript", "logo": "icons/Javascript.svg" },
-                { "name": "TypeScript", "logo": "icons/Typescript.svg" },
-                { "name": "Go", "logo": "icons/Go.svg"}
-            ]
-        },
-        {
             "category": "Databases",
             "items": [
                 { "name": "PostgreSQL", "logo": "icons/Postgresql.svg" },
@@ -36,10 +38,33 @@
             ]
         },
         {
-            "category": "Containers",
+            "category": "DevOps & CI/CD",
             "items": [
                 { "name": "Docker", "logo": "icons/Docker.svg" },
-                { "name": "DockerCompose", "logo": "icons/Docker.svg" }
+                { "name": "DockerCompose", "logo": "icons/Docker.svg" },
+                { "name": "GitHub Actions", "logo": "icons/GitHub.svg"},
+                { "name": "Makefile", "logo": "icons/Makefile.svg"}
+            ]
+        },
+        {
+            "category": "Infrastructure & Hosting",
+            "items": [
+                { "name": "Nginx", "logo": "icons/Nginx.svg"},
+                { "name": "Linux", "logo": "icons/Linux.svg" },
+                { "name": "Bash", "logo": "icons/Bash.svg"},
+                { "name": "Netlify", "logo": "icons/Netlify.svg"},
+                { "name": "Netcup VPS", "logo": "icons/Netcup.svg"},
+                { "name": "Let's Encrypt", "logo": "icons/Encrypt.svg"}
+                
+            ]
+        },
+        {
+            "category": "Tools & Workflow",
+            "items": [
+                { "name": "Git", "logo": "icons/Git.svg" },
+                { "name": "Postman", "logo": "icons/Postman.svg" },
+                { "name": "VSCode", "logo": "icons/VScode.svg" },
+                { "name": "Antigravity", "logo": "icons/Antigravity.svg" }
             ]
         },
         {
@@ -47,22 +72,6 @@
             "items": [
                 { "name": "Godot", "logo": "icons/Godot.svg" },
                 { "name": "Blender", "logo": "icons/Blender.svg" }
-            ]
-        },
-        {
-            "category": "Other",
-            "items": [
-                { "name": "Git", "logo": "icons/Git.svg" },
-                { "name": "Linux", "logo": "icons/Linux.svg" },
-                { "name": "Netlify", "logo": "icons/Netlify.svg"},
-                { "name": "GitHub Actions", "logo": "icons/GitHub.svg"}
-            ]
-        },
-        {
-            "category": "Hobbie",
-            "items": [
-                { "name": "Rust", "logo": "icons/Rust.svg" },
-                { "name": "Nim", "logo": "icons/Nim.svg" }
             ]
         }
     ]
