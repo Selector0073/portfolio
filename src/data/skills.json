@@ -8,8 +8,7 @@
                 { "name": "Rust", "logo": "icons/Rust.svg" },
                 { "name": "JavaScript", "logo": "icons/Javascript.svg" },
                 { "name": "TypeScript", "logo": "icons/Typescript.svg" },
-                { "name": "SQL", "logo": "icons/SQL.svg" },
-                { "name": "Nim", "logo": "icons/Nim.svg" }
+                { "name": "SQL", "logo": "icons/SQL.svg" }
             ]
         },
         {
