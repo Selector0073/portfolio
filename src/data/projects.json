@@ -57,15 +57,15 @@
             "Title": "Codewars pretty stats",
             "ShortDescription": "An API for retrieving statistics from CodeWars",
             "FullDescription": "A free API for retrieving great stats from your CodeWars account to spruce up your GitHub account, website, or anything else.",
-            "Images": ["development.webp", "codewars-pretty-stats2.webp", "development.webp"],
+            "Images": ["codewars-pretty-stats1.webp", "codewars-pretty-stats2.webp", "codewars-pretty-stats3.webp"],
             "GitHubLink": "https://github.com/Selector0073/codewars-pretty-stats",
-            "SiteLink": "https://codewars-api.selector0073.com",
-            "Status": "Under development",
+            "SiteLink": "https://codewars-pretty-stats.selector0073.com/?size=2&username=Selector0073",
+            "Status": "Finished",
             "Type": "Pet-project",
             "Tools": [
                 {
-                    "name": "Rust", 
-                    "values": ["axum", "hyper", "minreq", "serde/serde_json", "tokio"]
+                    "name": "Go", 
+                    "values": ["godotenv", "svgo"]
                 }
             ]
         },
