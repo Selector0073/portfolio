@@ -63,7 +63,8 @@
                 { "name": "Git", "logo": "icons/Git.svg" },
                 { "name": "Postman", "logo": "icons/Postman.svg" },
                 { "name": "VSCode", "logo": "icons/VScode.svg" },
-                { "name": "Antigravity", "logo": "icons/Antigravity.svg" }
+                { "name": "Antigravity", "logo": "icons/Antigravity.svg" },
+                { "name": "Hermes agent", "logo": "icons/Hermes-agent.svg"}
             ]
         },
         {
